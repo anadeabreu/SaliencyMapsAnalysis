@@ -1,6 +1,11 @@
 # SaliencyMapsAnalysis
+Data post-processing for "Look Around You: Saliency Maps for Omnidirectional Images in VR Applications" QoMex 2017.
+Ana De Abreu, Cagri Ozcinar, Aljosa Smolic
+
 
 ## General description
+
+Python 2.7 code (Jupyter notebook) to process the collected points saved in the CSV file, representing the location (stored UV coordinates) and duration (stored time stamp) of the participants FOVs centers. We Use a threshold to cluster the collected center points. Each cluster is assumed to be a fixation point if it has a number of points equivalent to at least 150ms, a commonly used lower threshold.  In addition, to account for the gradually decreasing accuracy from the center point of focus, the fixations are further filtered using a Gaussian kernel resulting in the final saliency map.
 
 ## Content
 
